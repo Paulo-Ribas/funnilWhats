@@ -1,0 +1,182 @@
+:root {
+    --colorFoundationCorPrimariaCorPrimaria50: #fff0e6;
+    --colorFoundationCorPrimariaCorPrimaria100: #ffd0b2;
+    --colorFoundationCorPrimariaCorPrimaria200: #ffb98d;
+    --colorFoundationCorPrimariaCorPrimaria300: #ff9959;
+    --colorFoundationCorPrimariaCorPrimaria400: #ff8539;
+    --colorFoundationCorPrimariaCorPrimaria500: #ff6707;
+    --colorFoundationCorPrimariaCorPrimaria600: #e85e06;
+    --colorFoundationCorPrimariaCorPrimaria700: #b54905;
+    --colorFoundationCorPrimariaCorPrimaria800: #8c3904;
+    --colorFoundationCorPrimariaCorPrimaria900: #6b2b03;
+    --colorFoundationCorPrimariaCorPrimaria50: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria100: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria200: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria300: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria400: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria500: #ffffff;
+    --colorFoundationCorPrimariaCorPrimaria600: #e8e8e8;
+    --colorFoundationCorPrimariaCorPrimaria700: #b5b5b5;
+    --colorFoundationCorPrimariaCorPrimaria800: #8c8c8c;
+    --colorFoundationCorPrimariaCorPrimaria900: #6b6b6b;
+    --colorFoundationCorSegundariaLight: #e8e8e8;
+    --colorFoundationCorSegundariaLightHover: #dddddd;
+    --colorFoundationCorSegundariaLightActive: #b9b8b8;
+    --colorFoundationCorSegundariaNormal: #1d1b1b;
+    --colorFoundationCorSegundariaNormalHover: #1a1818;
+    --colorFoundationCorSegundariaNormalActive: #171616;
+    --colorFoundationCorSegundariaDark: #161414;
+    --colorFoundationCorSegundariaDarkHover: #111010;
+    --colorFoundationCorSegundariaDarkActive: #0d0c0c;
+    --colorFoundationCorSegundariaDarker: #0a0909;
+    --colorFoundationCorSegundariaCorSegundaria50: #e8e8e8;
+    --colorFoundationCorSegundariaCorSegundaria100: #b8b8b8;
+    --colorFoundationCorSegundariaCorSegundaria200: #969595;
+    --colorFoundationCorSegundariaCorSegundaria300: #666565;
+    --colorFoundationCorSegundariaCorSegundaria400: #494747;
+    --colorFoundationCorSegundariaCorSegundaria500: #1b1919;
+    --colorFoundationCorSegundariaCorSegundaria600: #191717;
+    --colorFoundationCorSegundariaCorSegundaria700: #131212;
+    --colorFoundationCorSegundariaCorSegundaria800: #0f0e0e;
+    --colorFoundationCorSegundariaCorSegundaria900: #0b0b0b;
+    --colorFoundationOutrasOutras50: #fcf9eb;
+    --colorFoundationOutrasOutras100: #f6ecc1;
+    --colorFoundationOutrasOutras200: #f2e2a3;
+    --colorFoundationOutrasOutras300: #ecd579;
+    --colorFoundationOutrasOutras400: #e8cd5f;
+    --colorFoundationOutrasOutras500: #e2c137;
+    --colorFoundationOutrasOutras600: #ceb032;
+    --colorFoundationOutrasOutras700: #a08927;
+    --colorFoundationOutrasOutras800: #7c6a1e;
+    --colorFoundationOutrasOutras900: #5f5117;
+    --colorFoundationOutras02Light: #ffe6e6;
+    --colorFoundationOutras02LightHover: #ffd9d9;
+    --colorFoundationOutras02LightActive: #ffb0b0;
+    --colorFoundationOutras02Normal: #ff0000;
+    --colorFoundationOutras02NormalHover: #e60000;
+    --colorFoundationOutras02NormalActive: #cc0000;
+    --colorFoundationOutras02Dark: #bf0000;
+    --colorFoundationOutras02DarkHover: #990000;
+    --colorFoundationOutras02DarkActive: #730000;
+    --colorFoundationOutras02Darker: #590000;
+    --colorFoundationOutras03Outras0350: #e8ffe6;
+    --colorFoundationOutras03Outras03100: #b6ffb0;
+    --colorFoundationOutras03Outras03200: #93ff8a;
+    --colorFoundationOutras03Outras03300: #62ff54;
+    --colorFoundationOutras03Outras03400: #43ff33;
+    --colorFoundationOutras03Outras03500: #14ff00;
+    --colorFoundationOutras03Outras03600: #12e800;
+    --colorFoundationOutras03Outras03700: #0eb500;
+    --colorFoundationOutras03Outras03800: #0b8c00;
+    --colorFoundationOutras03Outras03900: #086b00;
+    --colorFoundationGreenGreen50: #e8ffe6;
+    --colorFoundationGreenGreen100: #b6ffb0;
+    --colorFoundationGreenGreen200: #93ff8a;
+    --colorFoundationGreenGreen300: #62ff54;
+    --colorFoundationGreenGreen400: #43ff33;
+    --colorFoundationGreenGreen500: #14ff00;
+    --colorFoundationGreenGreen600: #12e800;
+    --colorFoundationGreenGreen700: #0eb500;
+    --colorFoundationGreenGreen800: #0b8c00;
+    --colorFoundationGreenGreen900: #086b00;
+    --colorFoundationOutras03Outras0350: #e8ffe6;
+    --colorFoundationOutras03Outras03100: #b6ffb0;
+    --colorFoundationOutras03Outras03200: #93ff8a;
+    --colorFoundationOutras03Outras03300: #62ff54;
+    --colorFoundationOutras03Outras03400: #43ff33;
+    --colorFoundationOutras03Outras03500: #14ff00;
+    --colorFoundationOutras03Outras03600: #12e800;
+    --colorFoundationOutras03Outras03700: #0eb500;
+    --colorFoundationOutras03Outras03800: #0b8c00;
+    --colorFoundationOutras03Outras03900: #086b00;
+    --colorFoundationCorTerciariaCorTerciaria50: #fff0e6;
+    --colorFoundationCorTerciariaCorTerciaria100: #ffd0b2;
+    --colorFoundationCorTerciariaCorTerciaria200: #ffb98d;
+    --colorFoundationCorTerciariaCorTerciaria300: #ff9959;
+    --colorFoundationCorTerciariaCorTerciaria400: #ff8539;
+    --colorFoundationCorTerciariaCorTerciaria500: #ff6707;
+    --colorFoundationCorTerciariaCorTerciaria600: #e85e06;
+    --colorFoundationCorTerciariaCorTerciaria700: #b54905;
+    --colorFoundationCorTerciariaCorTerciaria800: #8c3904;
+    --colorFoundationCorTerciariaCorTerciaria900: #6b2b03;
+    --colorFoundationCorSuccessCorSuccess50: #e8ffe6;
+    --colorFoundationCorSuccessCorSuccess100: #b6ffb0;
+    --colorFoundationCorSuccessCorSuccess200: #93ff8a;
+    --colorFoundationCorSuccessCorSuccess300: #62ff54;
+    --colorFoundationCorSuccessCorSuccess400: #43ff33;
+    --colorFoundationCorSuccessCorSuccess500: #14ff00;
+    --colorFoundationCorSuccessCorSuccess600: #12e800;
+    --colorFoundationCorSuccessCorSuccess700: #0eb500;
+    --colorFoundationCorSuccessCorSuccess800: #0b8c00;
+    --colorFoundationCorSuccessCorSuccess900: #086b00;
+    --colorFoundationCorWarningCorWarning50: #ffe6e6;
+    --colorFoundationCorWarningCorWarning100: #ffb0b0;
+    --colorFoundationCorWarningCorWarning200: #ff8a8a;
+    --colorFoundationCorWarningCorWarning300: #ff5454;
+    --colorFoundationCorWarningCorWarning400: #ff3333;
+    --colorFoundationCorWarningCorWarning500: #ff0000;
+    --colorFoundationCorWarningCorWarning600: #e80000;
+    --colorFoundationCorWarningCorWarning700: #b50000;
+    --colorFoundationCorWarningCorWarning800: #8c0000;
+    --colorFoundationCorWarningCorWarning900: #6b0000;
+    --colorFoundationCorNeutraCorNeutra50: #f0f0f0;
+    --colorFoundationCorNeutraCorNeutra100: #d0d0d0;
+    --colorFoundationCorNeutraCorNeutra200: #b9b9b9;
+    --colorFoundationCorNeutraCorNeutra300: #989898;
+    --colorFoundationCorNeutraCorNeutra400: #858585;
+    --colorFoundationCorNeutraCorNeutra500: #666666;
+    --colorFoundationCorNeutraCorNeutra600: #5d5d5d;
+    --colorFoundationCorNeutraCorNeutra700: #484848;
+    --colorFoundationCorNeutraCorNeutra800: #383838;
+    --colorFoundationCorNeutraCorNeutra900: #2b2b2b;
+    --colorUiColorPrimary: #6750a3;
+}
+
+.text-style-labels-14-px {
+    font-size: 0.875rem;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 155.99%;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-paragrafos-16-px {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 155.99%;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-subtitulos-18-px {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 155.99%;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-titulos-25-px {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-destaque-32-px {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: none;
+}
