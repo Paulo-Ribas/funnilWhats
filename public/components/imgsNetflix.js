@@ -1,7 +1,7 @@
 export default {
     template: `
     <div class="imgs-container">
-        <div class="img" v-for="(img, index) in imgs" :key="index" >
+        <div class="img" v-for="(img, index) in imgs" :key="index" draggable="false" >
             <a href="#">
             <img :src="img.src">
             </a>

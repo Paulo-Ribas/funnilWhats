@@ -1,10 +1,8 @@
 export default {
     template: `
-    <div class="slide-itens-container">
         <div class="item" v-for="(img, index) in imgs" :key="index">
-            <img :src="img.src" alt="imagens ilustrativas">
+            <img :src="img.src" alt="imagens ilustrativas" draggable="false">
         </div>
-    </div>
 `,
     props: {
         imgsProps: Array,
