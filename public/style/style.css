@@ -178,9 +178,9 @@ svg {
     justify-content: center;
     
 }
-.apresentation-container img {
+/* .apresentation-container img {
     animation: down100toUp100  1s;
-}
+} */
 #apresentation svg {
     position: absolute;
     height: 27px;
@@ -302,6 +302,9 @@ footer {
 }
 .footer-container p {
     text-align: center;
+}
+.down100toUp100{
+    animation: down100toUp100 1s;
 }
 
 
