@@ -71,21 +71,21 @@ Vue.createApp({
             if(amout <= 12) amout *= 2
             const slideContainer = document.querySelector('.slide-infinite-loop-container')
             let borda = slide.getBoundingClientRect().left
-            let rigth = slide.getBoundingClientRect().right
-           // console.log(borda, slide.offsetWidth)
-            if(borda >= 80) {
+            let rigth = Math.abs(slide.getBoundingClientRect().left)
+           console.log(borda, (288.65 * (amout - 5 )))
+            if(borda >= 80 && rigth < 288.65 * (amout - 4)) {
                 this.cloneLeft = true
                 this.cloneRigth = false
-                this.prevTranslate = this.prevTranslate - (288 * amout / 2)
+                this.prevTranslate = this.prevTranslate - (288.65 * amout / 2)
                 this.currentTranslate =  this.prevTranslate
             }
                 
-             /* if (borda < 80) {
+            if (rigth >= 288.65 * (amout - 5)) {
                 this.cloneLeft = false
                 this.cloneRigth = true
-                this.prevTranslate = this.prevTranslate + (288 * amout / 2)
+                this.prevTranslate = this.prevTranslate + (288.65 * amout / 2)
                 this.currentTranslate = this.prevTranslate
-            }  */
+            }  
             slide.style.transform = `translateX(${this.currentTranslate}px)`
             //console.log('novo offset', slide.offsetWidth)
         },
