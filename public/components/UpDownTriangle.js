@@ -8,7 +8,9 @@ export default {
             <div class="itens-container">
                 <i :class="[prefix, icon]"></i>
                 <div class="texts-container">
-                    <h2 class="text-style-destaque-32px">{{textH1}}</h2>
+                <transition name="triangleanimation">
+                    <h2 v-if="mountedd" class="text-style-destaque-32px" :key='textH1'>{{textH1}}</h2>
+                </transition>
                     <h2 class="text-style-destaque-32-px">{{textH2}}</h2>
                     <h3 class="text-style-titulos-25-px">{{textH3}}</h3>
                     <p class="text-style-paragrafos-16-px"> {{textP}}</p>
@@ -28,6 +30,11 @@ export default {
         textPProps: String,
 
     },
+    watch: {
+        textH1Props(value){
+            this.textH1 = value
+        },
+    },
     data(){
         return {
             triangle: this.triangleProps,
@@ -36,10 +43,11 @@ export default {
             textH1: this.textH1Props,
             textH2: this.textH2Props,
             textH3: this.textH3Props,
-            textP: this.textPProps
+            textP: this.textPProps,
+            mountedd: false,
         }
     },
     mounted(){
-        console.log(this.triangle, this.prefix)
+        this.mountedd = true
     }
 }

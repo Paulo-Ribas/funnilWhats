@@ -7,10 +7,50 @@
     <link rel="stylesheet" href="./style/variables.css">
     <link rel="stylesheet" href="./style/style.css">
     <script src="https://kit.fontawesome.com/dbac956282.js" crossorigin="anonymous"></script>
+    <style>
+        .triangleanimation-enter-active {
+            transition: 100ms;
+            transition-timing-function: ease-out;
+            font-size: 3rem;
+             font-weight: bold;
+            -webkit-text-stroke: 2px;
+            text-transform: uppercase;
+        }
+        .triangleanimation-leave-active {
+            transition: 0ms;
+            font-size: 3rem;
+            position: absolute;
+             font-weight: bold;
+            -webkit-text-stroke: 2px;
+            text-transform: uppercase;
+        }
+        .triangleanimation-enter-from {
+            opacity: 0.1;
+            font-size: 3rem;
+            transform: scale(2);
+    
+        }
+        .triangleanimation-enter-to {
+            opacity: 1;
+            font-size: 3rem;
+            transform: scale(1);
+        }
+        .triangleanimation-leave-from {
+            opacity: 1;
+            font-size: 3rem;
+            transform: scale(1);
+        }
+        .triangleanimation-leave-to {
+            opacity: 0.1;
+            font-size: 3rem;
+            position: absolute;
+            transform: scale(0.3);
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-        <up-down-triangle :triangle-props="true" prefix-props="fa-brands" icon-props="fa-youtube" text-h1-props="+500 mil" text-h3-props="inscritos no youtube!"></up-down-triangle>
+        <up-down-triangle :triangle-props="true" prefix-props="fa-brands" icon-props="fa-youtube" :text-h1-props="youtubesub" text-h3-props="inscritos no youtube!"></up-down-triangle>
         <section id='description'>
             <div class="container">
                 <h2 class="text-style-destaque-32-px">tudo feito para <span class="brown-color">você!</span></h2>
