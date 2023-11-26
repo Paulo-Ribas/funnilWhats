@@ -76,14 +76,14 @@ Vue.createApp({
             if(borda >= 80 && rigth < 288.65 * (amout - 4)) {
                 this.cloneLeft = true
                 this.cloneRigth = false
-                this.prevTranslate = this.prevTranslate - (288.65 * amout / 2)
+                this.prevTranslate = this.prevTranslate - (288 * amout / 2)
                 this.currentTranslate =  this.prevTranslate
             }
                 
             if (rigth >= 288.65 * (amout - 5)) {
                 this.cloneLeft = false
                 this.cloneRigth = true
-                this.prevTranslate = this.prevTranslate + (288.65 * amout / 2)
+                this.prevTranslate = this.prevTranslate + (288 * amout / 2)
                 this.currentTranslate = this.prevTranslate
             }  
             slide.style.transform = `translateX(${this.currentTranslate}px)`
