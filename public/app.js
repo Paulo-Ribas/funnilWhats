@@ -3,7 +3,7 @@ import SlideItens from "./components/SlideItens.js";
 import UpDownTriangle from "./components/UpDownTriangle.js"
 import BtnWhats from "./components/BtnWhats.js";
 import imgsNetflix from "./components/imgsNetflix.js";
-let url = 'http://localhost:4444/'
+let url = 'https://ryannghisi.com.br/'
 
 
 Vue.createApp({
