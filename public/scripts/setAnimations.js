@@ -9,10 +9,9 @@ const ObserveDivForAnimation = (element, animation) => {
         if (!element.isIntersecting) {
             return
         }
-        console.log('entrando no  observer', element)
-        console.log('intersectou')
+        element.target.classList.add(animation)
     })
     observeElement.observe(element)
 }
 
-body.onload = SetAnimation()
+body.onload = SetAnimation

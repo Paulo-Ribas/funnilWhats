@@ -17,6 +17,7 @@ body {
     width: 100%;
     color: white;
     font-family: inter;
+    overflow: hidden;
 }
 svg {
     width: 100%;
@@ -289,6 +290,8 @@ footer {
     width: 100%;
     margin-top: 61px;
     padding-bottom: 107px;
+    padding-left: 3px;
+    padding-right: 3px;
     background-image: url(/img/footer-end.png);
     background-repeat: no-repeat;
     background-position: bottom;

@@ -1,6 +1,6 @@
 export default {
     template: `
-    <div :class="{'icon-text-container': true, 'brown-background': 'brown-background'}">
+    <div :class="{'icon-text-container': true, 'brown-background': 'brown-background', 'warn-container': warn}">
     <svg v-if="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
 	    <path class="elementor-shape-fill" d="M500,98.9L0,6.1V0h1000v6.1L500,98.9z"></path>
     </svg>
@@ -23,6 +23,7 @@ export default {
     props:{
         triangleProps: Boolean,
         prefixProps: String,
+        warnProps: Boolean,
         iconProps: String,
         textH1Props: String,
         textH2Props: String,
@@ -44,6 +45,7 @@ export default {
             textH2: this.textH2Props,
             textH3: this.textH3Props,
             textP: this.textPProps,
+            warn: this.warnProps,
             mountedd: false,
         }
     },

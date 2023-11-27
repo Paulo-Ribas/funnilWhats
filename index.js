@@ -1,8 +1,9 @@
 let express = require('express')
 let app = express()
 const { google } = require("googleapis");
+require('dotenv').config()
 
-const apiKey = "AIzaSyD42L0oclPoWP6zKtfQiBReCdJBj1nz4cA";
+const apiKey = process.env.APIKEY
 const channelID = "UCT3KpZF2igJppXlIrXatDfQ"; // O ID do canal que você deseja obter estatísticas
 
 const youtube = google.youtube({

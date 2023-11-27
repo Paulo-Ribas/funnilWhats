@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Do Master</title>
+    <title>MCA</title>
     <link rel="stylesheet" href="./style/variables.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/dbac956282.js" crossorigin="anonymous"></script>
     <style>
         .triangleanimation-enter-active {
@@ -61,7 +63,7 @@
                 <p>É um método prático e fácil de ser aplicado, <strong>validado por alunos que hoje já conseguiram sua liberdade financeira e <br>
                 vivem da sua renda através da internet.</strong></p>
                 <h2 class="text-style-destaque-32-px"><b>*resultados dos nossos alunos*</b></h2>
-                <div class="slide-infinite-loop-container" @mouseleave="stopDrag" @mousedown="startDrag" @mouseup="stopDrag" @mousemove="moveSlide">
+                <div class="slide-infinite-loop-container" @mouseleave="stopDrag" @touchend="stopDrag" @mousedown="startDrag" @touchstart="startDrag" @mouseup="stopDrag" @touchmove="moveSlide" @mousemove="moveSlide">
                     <div class="slide-itens-container">
                         <slide-itens v-if="cloneLeft" :imgs-props="[{src:'/img/imgSlide/image6.png'}, {src:'/img/imgSlide/image7.png'}, {src:'/img/imgSlide/image8.png'}, {src:'/img/imgSlide/image9.png'}, {src:'/img/imgSlide/image10.png'}, {src:'/img/imgSlide/image11.png'}, {src:'/img/imgSlide/image12.png'}, {src:'/img/imgSlide/image13.png'}, {src:'/img/imgSlide/image14.png'}, {src:'/img/imgSlide/image15.png'}, {src:'/img/imgSlide/image16.png'},{src:'/img/imgSlide/image17.png'}]"></slide-itens>
                         <slide-itens v-if="original" :imgs-props="[{src:'/img/imgSlide/image6.png'}, {src:'/img/imgSlide/image7.png'}, {src:'/img/imgSlide/image8.png'}, {src:'/img/imgSlide/image9.png'}, {src:'/img/imgSlide/image10.png'}, {src:'/img/imgSlide/image11.png'}, {src:'/img/imgSlide/image12.png'}, {src:'/img/imgSlide/image13.png'}, {src:'/img/imgSlide/image14.png'}, {src:'/img/imgSlide/image15.png'}, {src:'/img/imgSlide/image16.png'},{src:'/img/imgSlide/image17.png'}]"></slide-itens>
@@ -72,7 +74,7 @@
                 <btn-whats text-props="quero um mini curso" link-props="#"></btn-whats> 
             </div>
         </section>
-        <up-down-triangle :triangle-props="false" prefix-props="fa-solid" icon-props="fa-triangle-exclamation" text-h2-props="leia para poupar seu tempo" text-p-props="Você vai aprender com uma pessoa que já trilhou o caminho das pedras e passou pelo processo difícil do início de qualquer jornada. Nesse processo descobriu o que funciona e o que não funciona, para ensinar de uma forma que vai e poupar tempo e dinheiro."></up-down-triangle>
+        <up-down-triangle :triangle-props="false" :warn-props="true" prefix-props="fa-solid" icon-props="fa-triangle-exclamation" text-h2-props="leia para poupar seu tempo" text-p-props="Você vai aprender com uma pessoa que já trilhou o caminho das pedras e passou pelo processo difícil do início de qualquer jornada. Nesse processo descobriu o que funciona e o que não funciona, para ensinar de uma forma que vai e poupar tempo e dinheiro."></up-down-triangle>
         <section id="apresentation">
             <div class="container">
                 <div class="apresentation-container">
@@ -111,7 +113,7 @@
         <section id="goal">
             <div class="container">
                 <div class="ul-container">
-                    <h2 class="text-style-destaque-32-px">Para quem é o <abbr title="perguntar ao master" class="brown-color">MAC</abbr>?</h2>
+                    <h2 class="text-style-destaque-32-px">Para quem é o <abbr title="maquina de conversões automáticas" class="brown-color">MAC</abbr>?</h2>
                     <ul>
                         <li><span class="brown-background"><i class="fa-sharp fa-solid fa-check"></i></span>Para pessoas que querem alcançar sua <b> liberdade financeira e geográfica</b>;</li>
                         <li><span class="brown-background"><i class="fa-sharp fa-solid fa-check"></i></span><b>Para quem quer começar a faturar através do mercado digital</b>, mas não sabe por onde começar;</li>
@@ -126,7 +128,7 @@
             <div class="container">
                 <div class="general-container">
                     <h2 class="text-style-destaque-32-px">A sua <cite><b>Netflix</b></cite> de conteúdos! <br>
-                    Tudo isso e muito mais dentro do <abbr class="brown-color">MCA</abbr></h2>
+                    Tudo isso e muito mais dentro do <abbr class="brown-color" title="maquina de conversões automáticas">MCA</abbr></h2>
                     <imgs-netflix :img-src-props="[{src:'/img/imgsCard/image29.png'},{src:'/img/imgsCard/image30.png'},{src:'/img/imgsCard/image31.png'},{src:'/img/imgsCard/image32.png'},{src:'/img/imgsCard/image33.png'},{src:'/img/imgsCard/image34.png'},
                     {src:'/img/imgsCard/image35.png'},{src:'/img/imgsCard/image36.png'},{src:'/img/imgsCard/image37.png'},{src:'/img/imgsCard/image38.png'},{src:'/img/imgsCard/image39.png'},{src:'/img/imgsCard/image40.png'}]">
                 </imgs-netflix>
