@@ -4,7 +4,6 @@ const cors = require('cors')
 const { google } = require("googleapis");
 require('dotenv').config()
 
-app.use(cors())
 
 const apiKey = process.env.APIKEY
 const channelID = "UCT3KpZF2igJppXlIrXatDfQ"; // O ID do canal que você deseja obter estatísticas
@@ -15,6 +14,7 @@ const youtube = google.youtube({
 });
 
 app.use(express.static('public'))
+app.use(cors({ origin: '*'}))
 app.set('view engine', false)
 
 app.get('/', (req,res) =>{
